@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+    h1 Add new Chat Rooms
+
+    form(method='post', action='/admin/room')
+        fieldset.form-group
+            label(for='name') Name:
+            input.form-control(name='name', type='text', placeholder='Type chat room name')
+            small.text-muted Some text here
+        button.btn.btn-primary(type='submit') Create Room
